@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Great Treasure Education Center</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ <link rel="stylesheet" href="./tosstyle.css">
+ <link rel="icon" href="./Images/logo.png without words.png" sizes="32x32">
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XXNKRXWK2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2XXNKRXWK2');
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./Images/logo.png" alt="logo">
+    </div>
+    
+    <nav class="nav" id="nav-menu">
+      <ion-icon name="close-outline" class="header_close" id="close-menu"></ion-icon>
+      <ul class="nav_list">
+        <li class="nav_item"><a href="home.html" class="nav_link">Home</a></li>
+        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+        <li class="nav_item"><a href="#courses" class="nav_link">Courses & Pricing</a></li>
+        <li class="nav_item"><a href="#location" class="nav_link">Find Us</a></li>
+        <li class="nav_item"><a href="https://api.whatsapp.com/send?phone=85260943870" target="_blank" class="nav_link">Contact</a></li>
+      </ul>
+    </nav>     
+    <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu"></ion-icon>
+  </header>
+
+  <ul class = "terms">
+    <h1 class = "title">Terms of Service</h1>
+    <h2 class = "A">A. Refund Policies</h2>
+    <li>1. In Case of school closure before the commencement of a course, our school will refund in full the
+    course fee collected to pupils immediately.</li>
+    <li>2. If a course cannot be operated according to the arrangements specified in the fee receipts and pupils
+    pro-rata basis the course fee is collected to pupils as soon as possible and in any event not later than
+    one month after the pupils have requested the refund.</li>
+    <li>3. If a course cannot be operated on the date or at the time specified in the course leaflet and pupils
+    decline the revised arrangements offered by our school, our school will refund in full or on a
+    pro-rata basis the course fee collected to pupils as soon as possible and in any event not later than
+    one month after the pupils have requested for the refund.</li>
+    <li>4. In case of cessation of a course after its commencement, our school will refund to pupils the course
+    fee collected on a pro-rata basis as soon as possible and in any event not later than one month after
+    the cessation of the course.</li>
+    
+    <h2 class="B">B. Refund Procedures</h2>
+    <li>1. Our school will inform pupils of the refund arrangement either over the telephone or in writing.
+    For Pupils aged below 18, their parents or guardians can proceed with the refund procedures on
+    behalf of the pupils.</li>
+    <li>2. Our school will refund pupils in accordance with the above policies.</li>
+    <li>3. When processing the refund, our school will not take away the original fee receipts. Upon
+    receipt of the refund, pupils or parents should sign to acknowledge the receipt.</li>
+    <li>4. Our school will pay the refund either in cash or by cheque.</li>
+    
+    <h2 class= "C">C. Bad Weather</h2>
+    <li>1. We do not hold classes when Typhoon No.8 or Black Rain Signal is hoisted.</li>
+    <li>2. If Typhoon No.8 is hoisted during class, the class will stop immediately and students
+    should go home. If Black Rain is hoisted during class, the class will continuefor the remaining duration left and then students will go home.<li>
+    <li>3 If the signal for the Black Rainstorm or Typhoon Signal No.8 is lowered:</li>
+    <p>On 8am, the centre will open at 10am</p>
+    <p>Before 12 noon, then the centre will open at 2pm</p>
+    <p>After 12 noon, the centre will remain closed for the entirety of the day</p>
+    <li>4.Students will not be notified individually of the weather situation. Parents should pay
+    attention to the Hong Kong Observatory weather reports.</li>
+    <li>5. If class resumes after Typhoon No.8 or Black Rain has been lowered and students do not
+    come to the class, there will be no makeup classes or refunds.</li>
+   </ul>
+    
+   
+   
+
+<footer>
+ <div class="footer-content">
+  <h3>Greate Treasure education Center</h3>
+  <p><a href="https://goo.gl/maps/2mXW8T6as9UtdvwH7" target="_blank">Unit C, 3/F, HQ, 450-454 Portland Street, Kowloon, Hong Kong</a></p>
+  <ul class="socials">
+   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+   <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+   <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+   <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+  </ul>
+  <p>Contact: +852 2390-9000</p>
+  <p>Email: charleswong1016@gmail.com</p>
+ </div>
+ <div class="footer-bottom">
+  <p>Copyright &copy;2021 Greate Treasure Education Center, designed by: <span>Harshul Agarwal</span><a href="tos.html">
+    Terms of Service & Weather Procedures</a></p>
+ </div>
+</footer>
+
+ </body>
+ <script>
+  function open_close(){
+    const navMenu = document.getElementById('nav-menu'),
+        toggleMenu = document.getElementById('toggle-menu'),
+        closeMenu = document.getElementById('close-menu')  
+
+    toggleMenu.addEventListener('click',()=>{
+        navMenu.classList.toggle('show')
+})
+
+    closeMenu.addEventListener('click',()=>{
+        navMenu.classList.remove('show')
+    })
+
+}
+</script>
+ </head>

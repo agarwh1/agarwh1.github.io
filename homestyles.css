@@ -1,0 +1,2101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.google.com/css2?family=Poppin&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Roboto";
+  scroll-behavior: smooth;
+}
+
+body,html {
+  overflow-x: hidden;
+  background: #077187;
+}
+
+script{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.logo img{
+  width: 50%;
+  margin-left: -20%;
+}
+
+.nav_list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav_item{
+  margin: 0 18px;
+}
+
+.nav_link{
+  padding: 10px;
+  color: white;
+  font-size: .9rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.header_toggle,
+.header_close
+{
+  display: none;
+}
+
+
+.nav ul li a {
+  text-decoration: none;
+  padding: 0.2em 1.2em 0.9em 1.2em;
+  border-radius: 10px 10px -10px 0;
+  color: white;
+  transition: all 4s;
+  position: relative;
+  z-index: 2;
+}
+
+.nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 41px;
+  border-radius: 10px 10px 0 0;
+  background: white;
+  transform-origin: bottom;
+  transform: scaleY(0.05);
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.nav ul li a:hover::before {
+  transform: scaleY(1.1);
+}
+.nav ul li a:hover {
+  color: black;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 115%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+.menu {
+  position: absolute;
+  top: 1050px;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0.7em 0.2em 1em;
+}
+
+.menu label:hover {
+  background: lightblue;
+  transition: all 2s;
+}
+
+.menu label::after{
+  background:#077187 ;
+}
+
+.sliders-container {
+  height: 60%;
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 10%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.sliders {
+  width: 100%;
+  height: 130%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 0em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+
+[id^="slider"]:checked + .sliders {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+.sliders-1 {
+  background-image: url("./Images/students1.jpg");
+}
+.sliders-2 {
+  background-image: url("./Images/Classroom.jpg");
+}
+.sliders-3 {
+  background-image: url("./Images/students2.jpg");
+}
+
+.sliders-4{
+  background-image: url("./Images/jai.jpg");
+}
+
+.sliders-5{
+  background-image: url("./Images/classroom2.jpg");
+}
+
+#vision_title {
+  background: lightblue;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Oswald";
+}
+
+.vision ul {
+  background: lightblue;
+}
+
+.vision li {
+  color: black;
+  width: 20%;
+  display: inline-block;
+  margin-left: 10%;
+  padding: 2%;
+  background: lightblue;
+  orientation: landscape;
+}
+
+.vision li h1 {
+  font-family: "Oswald";
+  text-align: center;
+  font-size: 2rem;
+  background: lightblue;
+  transition: all 5s ease-in s;
+}
+
+.vision li p {
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 1rem;
+  padding: 3% 5%;
+  background: lightblue;
+  width: 100%;
+}
+.vision li a {
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 1rem;
+  color: #077187;
+  background: lightblue;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-section {
+  background: lightblue;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.slider__nav {
+  width: 12px;
+  height: 12px;
+  margin: 80px 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid black;
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.slider__nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+  animation: check 0.4s linear forwards;
+}
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+  left: 0%;
+}
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+  left: -100%;
+}
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+  left: -200%;
+}
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+  left: -300%;
+}
+.slider__nav:checked:nth-of-type(5) ~ .slider__inner {
+  left: -400%;
+}
+.slider__inner {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 500%;
+  height: auto;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.slider__contents {
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: black;
+}
+.slider__caption {
+  font-size: 14px;
+  color: black;
+  opacity: 0.5;
+  font-family: "Open Sans";
+  padding-top: 1%;
+}
+.slider__txt {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Roboto";
+  line-height: 1.7;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  max-width: 750px;
+}
+quote {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 100px;
+}
+
+@-webkit-keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+@keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+.intro img {
+  border: 15px solid lightblue;
+  border-radius: 3px;
+  margin-left: 35%;
+  margin-top: 3%;
+  height: 900px;
+  width: 600px;
+}
+
+.intropara h1 {
+  float: right;
+  color: white;
+  text-align: center;
+  width: 30%;
+  font-size: 4rem;
+  font-family: "Open Sans";
+  line-height: 35px;
+  font-weight: 500;
+  margin-top: -30%;
+  margin-right: 15%;
+}
+
+.intropara p {
+  margin-top: -23%;
+  margin-right: 15%;
+  float: right;
+  color: white;
+  text-align: center;
+  width: 30%;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  line-height: 2;
+}
+
+#quote {
+  margin-top: -5%;
+  margin-right: 15%;
+  float: right;
+  color: white;
+  text-align: center;
+  width: 30%;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.education {
+  padding-top: 0.2%;
+  background: lightblue;
+  height: 20%;
+  width: 45%;
+  margin-top: 4%;
+  margin-left: 4%;
+}
+
+.education h1 {
+  margin-top: 1%;
+  background: lightblue;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 3rem;
+}
+.education p {
+  margin-top: 3%;
+  background: lightblue;
+  text-align: center;
+  font-family: "Open Sans";
+  line-height: 2;
+  padding-bottom: 0.2%;
+}
+
+.achievements {
+  padding-top: 0.2%;
+  background: lightblue;
+  height: 20%;
+  width: 45%;
+  margin-top: -18.7%;
+  padding-bottom: -5%;
+}
+
+.achievements h1 {
+  margin-top: 1%;
+  background: lightblue;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 3rem;
+}
+.achievements p {
+  margin-top: 3%;
+  background: lightblue;
+  text-align: center;
+  font-family: "Open Sans";
+  line-height: 2;
+  padding-bottom: 0.3%;
+}
+
+.students {
+  background: lightblue;
+  height: 20%;
+  width: 96%;
+  margin-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 3%;
+}
+
+.students h1 {
+  padding-top: 2%;
+  margin-top: 2%;
+  background: lightblue;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 3rem;
+  background: lightblue;
+}
+
+.students li {
+  margin-top: 2%;
+  display: inline-block;
+  font-family: "Open Sans";
+  line-height: 2;
+  color: black;
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+
+.students ul {
+  background: lightblue;
+}
+#i {
+  float: right;
+  margin-right: 6%;
+}
+
+.teacher {
+  background: lightblue;
+  width: 80%;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 3rem;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-left: 10%;
+  margin-top: -8%;
+}
+
+.testimonials-section2 {
+  background: lightblue;
+  height: 300px;
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.slider__nav2 {
+  width: 12px;
+  height: 12px;
+  margin: 20px 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid black;
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.slider__nav2:checked {
+  -webkit-animation: check 0.4s linear forwards;
+  animation: check 0.4s linear forwards;
+}
+.slider__nav2:checked:nth-of-type(1) ~ .slider__inner2 {
+  left: 0%;
+}
+.slider__nav2:checked:nth-of-type(2) ~ .slider__inner2 {
+  left: -100%;
+}
+.slider__nav2:checked:nth-of-type(3) ~ .slider__inner2 {
+  left: -200%;
+}
+.slider__nav2:checked:nth-of-type(4) ~ .slider__inner2 {
+  left: -300%;
+}
+.slider__nav2:checked:nth-of-type(5) ~ .slider__inner2 {
+  left: -400%;
+}
+.slider__inner2 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 300%;
+  height: auto;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.slider__contents2 {
+  height: 80%;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: black;
+}
+.slider__caption2 {
+  font-size: 16px;
+  color: black;
+  opacity: 0.5;
+  font-family: "Open Sans";
+  padding-top: 1%;
+}
+.slider__txt2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto";
+  line-height: 1.7;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  max-width: 750px;
+}
+#quote{
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 100px;
+  margin-top: 1;
+}
+
+#courses {
+  font-family: "Dancing Script";
+  color: white;
+  margin-top: 5%;
+  padding-top: 4%;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.table {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 5%;
+  opacity: 1;
+  transition: all ease-in 3s;
+}
+
+.table2 {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 5%;
+  opacity: 1;
+  transition: all ease-in 2s;
+}
+
+.card {
+  position: relative;
+  background: lightblue;
+  color: black;
+  width: 25%;
+  height: 580px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-right: 5%;
+  transition: all ease-in-out 1s;
+  font-family: "Open Sans";
+  overflow: hidden;
+}
+
+#d #cardbut {
+  margin-top: 7%;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  background: lightblue;
+}
+.title p {
+  background: lightblue;
+}
+
+.price {
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Open Sans";
+  background: lightblue;
+}
+
+.price h5 {
+  font-size: 4em;
+  margin: 20px;
+  padding: 20px;
+  font-family: "Open Sans";
+  background: lightblue;
+}
+.price h5 sup {
+  font-size: 25px;
+  font-family: "Open Sans";
+  background: lightblue;
+}
+
+.price p {
+  margin-top: -15px;
+  font-size: 12px;
+  padding-bottom: 25px;
+  font-family: "Open Sans";
+  background: lightblue;
+}
+
+.option {
+  position: relative;
+  padding: 10px;
+  font: "Open Sans";
+  margin-top: 5%;
+  background: lightblue;
+}
+
+.option li {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1px;
+  font-weight: bold;
+  list-style: none;
+  font-family: "Open Sans";
+  margin-top: 5%;
+  color: black;
+  background: lightblue;
+}
+
+#cardbut {
+  position: absolute;
+  bottom: 1;
+  margin-top: 4%;
+  left: 43%;
+  outline: none;
+  border: none;
+  background: lightblue;
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out 1s;
+  box-shadow: 0 0 8px;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 0 20pxem inset white;
+}
+
+.card:hover #cardbut {
+  background: #0088a9;
+  color: white;
+}
+
+#location{
+  padding-top: 6%;
+}
+
+#loc_title{
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  font-family:'Dancing Script' ;
+}
+
+.map{
+  margin-left: 15%;
+  padding-top: 4%;
+  height: 465px;
+  width: 380px;
+  padding-top: 4%;
+  margin-bottom: 5%;
+}
+
+.direction1{
+  color: white;
+  font-size: 1rem;
+  width: 25%;
+  line-height: 2;
+  margin-left: 50%;
+  margin-top: -27%;
+  padding-bottom: 12%;
+}
+
+.direction_link{
+  margin-top: 10%;
+}
+
+.direction_link a{
+  color: white;
+  margin-top: 15%;
+}
+
+.direction_link a:hover {
+  color: aqua;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #077187;
+  height: 170px;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 2.3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-content a {
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 28px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: aqua;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0 1rem 0;
+}
+.socials li {
+  margin: 0 7px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.3rem;
+  transition: color 2.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  width: 100vw;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: black ;
+  font-weight: bold;
+}
+
+.footer-bottom a {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: aqua;
+}
+
+
+@media (max-width: 699px) {
+
+  .logo{
+    height: 30px;
+    margin-top: 12%;
+    margin-left: 10%;
+  }
+
+  .logo img{
+    height: 60px;
+    width:170px;
+  }
+
+  header{
+    height: 48px;
+    justify-content: space-between;
+    padding: 0 28px;
+  }
+
+  .header_toggle{
+    display: inline;
+    color: white;
+    font-size: 65px;
+    margin-top: 20%;
+  }
+
+  .header_close{
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 60px;
+    border-radius: 50%;
+  }
+
+  .header_close:hover{
+    background-color:white;
+  }
+
+  .nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #0088a9;
+    width: 60%;
+    height: 100vh;  
+    padding: 24px 0;
+    z-index: 1000;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+  }
+
+  .nav_list{
+    margin-top: 35%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+
+  .nav_item{
+    margin: 2rem 0;
+  }
+
+  .show{
+    right: 0;
+  }
+  
+  .sliders-container {
+    height: 30%;
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-bottom: 8%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .menu {
+    top: 85%;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    margin: 1em 0.2em 1em;
+  }
+
+  .vision ul{
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .vision ul li{
+    display:list-item;
+    list-style: none;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .vision li h1 {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 2rem;
+    background: lightblue;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .vision li p {
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 1rem;
+    background: lightblue;
+    width: 100%;
+  }
+
+  .slider__txt{
+    width: 80%;
+  }
+
+  #from{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -15%;
+    padding-top: 1%;
+  }
+
+  #charles {
+    height: 520px;
+    width: 80%;
+    border:4px solid lightblue;
+    margin-left: 12%;
+    margin-top: 10%;
+  }
+
+  .intropara{
+    margin-top: 50%;
+    margin-bottom: 30%;
+  }
+
+  .intropara h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 4rem;
+    font-family: "Open Sans";
+    line-height: 35px;
+    font-weight: 500;
+    margin-right: 13%;
+  }
+
+  .intropara p {
+    margin-top: -2%;
+    margin-right:10%;
+    width: 80%;
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+
+  #quote {
+    margin-top: 5%;
+    margin-right: 25%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    line-height: 2;
+    padding-bottom: 15%;
+  }
+
+  .education {
+    background: lightblue;
+    height: 30%;
+    width: 93%;
+    margin-left: 3.5%;
+    margin-top: 220%;
+  }
+
+  .education h1{
+    text-align: center;
+  }
+
+  .achievements {
+    background: lightblue;
+    height: 30%;
+    width: 93%;
+    margin-left: 3.5%;
+    margin-top: 6%;
+    margin-bottom: 20%;
+  }
+
+  .students{
+    margin-top: -2%;
+    margin-bottom: 10%;
+    padding-bottom: 2%;
+    height: 55%;
+    width: 93%;
+    margin-left: 3.5%;
+  }
+
+  .students ul{
+    display: list-item;
+    text-align: center;
+    list-style: none;
+  }
+
+  .students li {
+   font-size: 0.8rem;
+   width: 50%;
+   background: transparent;
+  }
+
+  #u{
+    background-color: transparent;
+    width: 100%;
+    margin-top: -5%;
+    text-decoration: none;
+  }
+
+  .testimonials-section{
+    height: 480px;
+    padding-bottom: 2%;
+    width: 100%;
+    margin-top: -0.1%;
+  }
+
+  .recom{
+    margin-left: -6%;
+    width: 100%;
+  }
+
+  .teacher{
+    font-size: 2.5rem;
+    margin-top:1% ;
+    width: 93%;
+  }
+
+  .testimonials-section2{
+    height: 340px;
+    width: 93%;
+  }
+
+  #second{
+    font-size:50px ;
+    justify-content: center;
+  }
+
+  .slider__caption2{
+    margin-top: -2%;
+  }
+
+  .slider__nav2{
+    margin-top: -20px;
+  }
+
+  .slider__txt2{
+    font-size: 1.6rem;
+    margin-top: -1.5%;
+    padding-bottom: 2%;
+  }
+
+  #courses{
+    margin-left: 10%;
+  }
+
+  .table{
+    margin-top: 3%;
+    margin-left: 13%;
+    display: list-item;
+    list-style: none;
+    width: 350%;
+  }
+
+  .table2{
+    margin-top: 3%;
+    margin-left: 13%;
+    display: list-item;
+    list-style: none;
+    width: 350%;
+  }
+
+  .table .card{
+    height: 530px;
+  }
+  
+  #cardbut {
+    margin-left: -5%;
+    margin-top: 5%;
+  }
+
+  .table2 #cardbut {
+    margin-top: 7%;
+  }
+
+  #loc_title{
+    margin-left: 3%;
+  }
+
+  .map{
+    width: 70%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 17%;
+  }
+
+  .direction1{
+    width: 70%;
+    margin-top:12%;
+    margin-left: 15%;
+  }
+
+  footer{
+    margin-left: 8.5%;
+  }
+}
+
+@media (min-width:700px) and (max-width: 1367px) {
+
+  .logo{
+    height: 60px;
+    width: 500px;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .logo img{
+    height: 110px;
+  }
+
+  header{
+    height: 48px;
+    justify-content: space-between;
+    padding: 0 28px;
+  }
+
+  .header_toggle{
+    display: inline;
+    color: white;
+    font-size: 72px;
+    margin-top: 15%;
+  }
+
+  .header_close{
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 60px;
+    border-radius: 50%;
+  }
+
+  .header_close:hover{
+    background-color:white;
+  }
+
+  .nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #0088a9;
+    width: 60%;
+    height: 100vh;  
+    padding: 24px 0;
+    z-index: 1000;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+  }
+
+  .nav_list{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+
+  .nav_item{
+    margin: 2rem 0;
+  }
+
+  .show{
+    right: 0;
+  }
+  
+  .sliders-container {
+    height: 50%;
+    width: 90%;
+    margin-top: 13%;
+    margin-left: 5%;
+    margin-bottom: 6%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .menu {
+    top: 90%;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    margin: 1em 0.2em 1em;
+  }
+
+  .vision ul{
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .vision ul li{
+    display:list-item;
+    list-style: none;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .vision li h1 {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 2rem;
+    background: lightblue;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .vision li p {
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 1rem;
+    background: lightblue;
+    width: 100%;
+  }
+
+  .slider__txt{
+    width: 80%;
+  }
+
+  .slider__nav{
+    margin-top: -100px;
+  }
+
+
+  #from{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -15%;
+    padding-top: 1%;
+  }
+
+  #charles{
+    margin-top: 10%;
+    margin-left: 25.5%;
+    height: 600px;
+    width: 400px;
+  }
+
+  .intropara{
+    margin-top: 25%;
+    padding-bottom: 30%;
+    margin-left: 20%;
+  }
+
+  .intropara h1 {
+    color: white;
+    text-align: center;
+    width: 70%;
+    font-size: 4rem;
+    font-family: "Open Sans";
+    line-height: 35px;
+    font-weight: 500;
+    margin-right: 25%;
+    margin-top: -15%;
+  }
+
+  .intropara p {
+    margin-top: -5%;
+    margin-right: 13%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: "Open Sans";
+    line-height: 2;
+  }
+
+  #quote {
+    margin-top: 5%;
+    margin-right: 36%;
+    color: white;
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    line-height: 2;
+    margin-bottom: 5%;
+  }
+
+  .education {
+    background: lightblue;
+    height: 30%;
+    width: 93%;
+    margin-left: 3.5%;
+    margin-top:8%;
+    padding-top: 1%;
+  }
+
+  .education h1{
+    margin-left: 6.5%;
+  }
+
+  .achievements {
+    background: lightblue;
+    height: 30%;
+    width: 93%;
+    margin-left: 3.5%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+  }
+
+  .students{
+    margin-top: -2%;
+    margin-bottom: 20%;
+    height: 30%;
+    width: 93%;
+    margin-left: 3.5%;
+    text-align: center;
+  }
+
+  .students ul{
+    text-align: center;
+    list-style: none;
+  }
+
+  .students li {
+   font-size: 0.9rem;
+   line-height: 1.9;
+   width: 50%;
+   background: transparent;
+   text-align: center;
+  }
+
+  #u{
+    background-color: transparent;
+    width: 100%;
+    margin-top: -1%;
+    text-decoration: none;
+  }
+
+  #i{
+    width: 88%;
+  }
+
+  #from{
+    margin-left: 5%
+  }
+
+  .testimonials-section{
+    height: 480px;
+    padding-bottom: 2%;
+    width: 100%;
+    margin-top: -0.1%;
+  }
+
+  .recom{
+    margin-left: -10%;
+    margin-right: -12%;
+    margin-top: -15%;
+  }
+
+  .teacher{
+    font-size: 2.5rem;
+    width: 93%;
+    margin-left: 3.5%;
+  }
+  
+  .testimonials-section2{
+    height: 240px;
+    width: 93%;
+    margin-left: 3.5%;
+    margin-top: -1.7%;
+    z-index: 100;
+  }
+
+  #second{
+    font-size:50px ;
+    justify-content: center;
+  }
+
+  .slider__caption2{
+    margin-top: -25%;
+    background: transparent;
+  }
+
+  .slider__nav2{
+    margin-top: -20px;
+  }
+
+  .slider__txt2{
+    font-size: 1.6rem;
+    margin-top: -1.5%;
+    padding-bottom: 2%;
+  }
+
+  #courses{
+    margin-bottom: 12%;
+    width: 90%;
+    margin-left: 6%;
+  }
+
+  .table{
+    margin-top: -6%;
+    margin-left: 17.5%;
+    display: list-item;
+    list-style: none;
+    width: 250%;
+  }
+
+  .table .card{
+    margin-top: 2%;
+  }
+
+  .table2{
+    margin-left: 17.5%;
+    display: list-item;
+    list-style: none;
+    width: 250%;
+  }
+
+ .card{
+    height: 600px ;
+    margin-top:1%;
+  }
+  
+  #cardbut {
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  .table2 #cardbut {
+    margin-top: 2%;
+  }
+
+  #loc_title{
+    margin-left: 1%;
+  }
+
+  .map{
+    width: 70%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+
+  .direction1{
+    width: 70%;
+    margin-top:7%;
+    margin-left: 15%;
+  }
+
+  .direction_link{
+    margin-top: 3%;
+  }
+
+  footer{
+    margin-left: 8.5%;
+    margin-top: -8%;
+  }
+
+}
+
+@media (min-width: 1368px) {
+
+  .logo{
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+  
+  .sliders-container {
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+    margin-top: 2%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .menu {
+    top: 90%;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    margin: 1em 0.2em 1em;
+  }
+
+  .vision {
+    margin-top: -3%;
+  }
+
+  .vision li h1 {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 2rem;
+    background: lightblue;
+    width: 110%;
+    margin-left: 0%;
+  }
+
+  .vision li p {
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 1rem;
+    padding: 2% 2%;
+    background: lightblue;
+    width: 150%;
+    margin-left: -20%;
+  }
+
+  .students{
+    margin-top: -2%;
+    margin-left: 1.5%;
+  }
+
+  .students li {
+    margin-top: 2%;
+    display: inline-block;
+    font-family: "Open Sans";
+    line-height: 2;
+    color: black;
+    font-size: 1rem;
+    padding-right: 1%;
+  }
+
+  #i{
+    width: 100%;
+    background-color: transparent;
+    padding-left: 15%;
+  }
+
+  #u{
+    width: 100%;
+    margin-right: 10%;
+    margin-top: 2%;
+  }
+
+  #from{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -5%;
+    padding-top: 1%;
+  }
+
+
+  .intro img {
+    margin-left: 13%;
+    margin-top: 10%;
+    height: 600px;
+    width: 400px;
+  }
+
+  .education {
+    padding-top: 0.2%;
+    background: lightblue;
+    height: 30%;
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 4%;
+  }
+
+  .achievements {
+    padding-top: 0.2%;
+    background: lightblue;
+    height: 30%;
+    width: 45%;
+    margin-bottom: 7%;
+    margin-top: -20.3%;
+    margin-left: 50%;
+  }
+
+  .intropara h1 {
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 4rem;
+    font-family: "Open Sans";
+    line-height: 35px;
+    font-weight: 500;
+    margin-top: -40%;
+    margin-right: 13%;
+  }
+
+  .intropara p {
+    margin-top: -33%;
+    margin-right: 13%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 1.3rem;
+    font-family: "Open Sans";
+    line-height: 2;
+  }
+
+  #charles{
+    orientation: portrait;
+  }
+
+  #quote {
+    margin-top: -5%;
+    margin-right: 13%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    line-height: 2;
+  }
+
+  .teacher{
+    font-size: 2.5rem;
+    width: 85%;
+    margin-left:6.6%;
+  }
+
+  .testimonials-section{
+    height: 380px;
+  }
+
+  .testimonials-section2{
+    height: 200px;
+    width: 85%;
+    margin-left:6.6%;
+  }
+
+  #second{
+    font-size:50px ;
+    justify-content: center;
+  }
+
+  .slider__caption2{
+    margin-top: -2%;
+  }
+
+  .slider__nav2{
+    margin-top: -20px;
+  }
+
+  .slider__txt2{
+    font-size: 1.6rem;
+    margin-top: -1.5%;
+  }
+
+  .table{
+    margin-top: 3%;
+  }
+
+  .card{
+    height: 530px ;
+    width: 600px;
+  }
+
+
+  #cardbut {
+    margin-left: -5%;
+    margin-top: 5%;
+  }
+
+  .table2 #cardbut {
+    margin-top: 7%;
+  }
+
+  .direction1{
+    margin-top: -30%;
+  }
+
+  footer{
+    margin-top: -3%;
+  }
+
+}
+
+@media (min-width: 1920px) {
+  .intro img {
+    margin-left: 15%;
+    margin-top: 8%;
+    height: 650px;
+    width: 420px;
+  }
+
+  .intropara h1 {
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 3.2rem;
+    font-family: "Open Sans";
+    line-height: 35px;
+    font-weight: 500;
+    margin-top: -30.5%;
+    margin-right: 13%;
+  }
+
+  .intropara p {
+    margin-top: -25%;
+    margin-right: 13%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 1.3rem;
+    font-family: "Open Sans";
+    line-height: 2;
+  }
+
+  #quote {
+    margin-top: -7%;
+    margin-right: 13%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 1.3rem;
+    font-family: "Open Sans";
+    line-height: 2;
+  }
+
+  .education {
+    padding-top: 0.2%;
+    background: lightblue;
+    height: 20%;
+    width: 45%;
+    margin-left: 4%;
+    padding-bottom: 0.2%;
+  }
+
+  .achievements {
+    padding-top: 0.2%;
+    background: lightblue;
+    height: 20%;
+    width: 45%;
+    margin-top: -17.1%;
+    margin-left: 50%;
+    padding-bottom: 0.2%;
+  }
+
+  .students {
+    margin-top: 3%;
+  }
+
+  .students ul li {
+    margin-top: 1%;
+    background: lightblue;
+    display: inline-block;
+    font-family: "Open Sans";
+    line-height: 1.7;
+    padding: 5px 0px;
+    color: black;
+    font-size: 1.1rem;
+  }
+
+  .card{
+    height: 550px;
+  }
+
+  #cardbut {
+    margin-left: -1%;
+    margin-top: 5%;
+  }
+
+  .direction1{
+   margin-left:40% ;
+   margin-top: -23%;
+  }
+
+  footer{
+    margin-top: -7%;
+  }
+ 
+
+}
+
+@media (min-width: 2560px) {
+
+  .logo{
+    width: 25%;
+  }
+
+  .nav_link{
+    font-size: 1.3rem;
+    padding-top: 200px;
+  }
+
+  .sliders-container {
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+    margin-top: 2%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .menu {
+    top: 90%;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 1em 0.2em 1em;
+  }
+
+  #l {
+    margin-left: 9%;
+  }
+
+  .students{
+    margin-top: -8%;
+  }
+
+  .students ul{
+    background: transparent;
+  }
+
+  .students ul li {
+    margin-top: 1%;
+    display: inline-block;
+    font-family: "Open Sans";
+    line-height: 2;
+    padding: 10px 0px;
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  .students {
+    padding-bottom: 2%;
+  }
+
+  #u {
+    margin-left: 6%;
+  }
+  #i {
+    margin-left: 6%;
+  }
+
+  .education {
+    padding-top: 0.2%;
+    padding-bottom: 2%;
+    background: lightblue;
+    height: 20%;
+    width: 45%;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-bottom: 0%;
+  }
+
+  .achievements {
+    padding-top: 0.2%;
+    padding-bottom: 2%;
+    background: lightblue;
+    height: 20%;
+    width: 45%;
+    margin-top: -16.3%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+  }
+
+  .intropara h1 {
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 4rem;
+    font-family: "Open Sans";
+    line-height: 35px;
+    font-weight: 500;
+    margin-top: -27%;
+    margin-right: 15%;
+  }
+
+  .intropara p {
+    margin-top: -20.5%;
+    margin-right: 15%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    line-height: 2;
+  }
+
+  #quote {
+    margin-top: -7%;
+    margin-right: 15%;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    line-height: 2;
+  }
+
+  .intro img {
+    margin-left: 16%;
+    margin-top: 7%;
+    height: 800px;
+    width: 500px;
+  }
+
+  #title {
+    margin-top: 9%;
+  }
+
+  .card{
+    height: 580px;
+  }
+
+  #cardbut {
+    margin-left: -1%;
+    margin-top: 5%;
+  }
+
+  .map {
+    height: 30%;
+    width: 18%;
+  }
+
+  .direction1{
+    margin-top: -17%;
+    margin-left: 40%;
+  }
+
+  .direction_link{
+    margin-top: 5%;
+  }
+
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+    color: black;
+    font-weight: 800;
+  }
+}
